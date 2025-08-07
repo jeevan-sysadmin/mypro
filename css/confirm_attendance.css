@@ -1,0 +1,81 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    background-color: #580000;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.summary-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.submit-btn {
+    background-color: #580000;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #450000;
+    transform: translateY(-2px);
+}
+.back-btn {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.back-btn:hover {
+    transform: scale(1.1);
+}
+.present-count {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.absent-count {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.loading-spinner {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.2em;
+    margin-right: 0.5rem;
+}
+.table th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+}
+.table td {
+    vertical-align: middle;
+}
+.status-present {
+    color: #28a745;
+    font-weight: 500;
+}
+.status-absent {
+    color: #dc3545;
+    font-weight: 500;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+}

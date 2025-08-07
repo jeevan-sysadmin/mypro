@@ -1,0 +1,47 @@
+body {
+    background-color: #f8f9fa;
+}
+.header {
+    background-color: #580000;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+.student-card {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.btn-present {
+    background-color: #28a745;
+    color: white;
+}
+.btn-absent {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-inactive {
+    background-color: #6c757d;
+    color: white;
+}
+.submit-btn {
+    background-color: #580000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.back-btn {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

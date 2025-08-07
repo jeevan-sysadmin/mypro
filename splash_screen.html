@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="css/splash_screen.css">
+</head>
+<body>
+    <div id="sessionExpiredMessage" class="session-expired">
+        <h3>Session Expired</h3>
+        <p>Staff ID not found. Please login again.</p>
+        <button onclick="redirectToLogin()">OK</button>
+    </div>
+    
+    <div class="content" id="splashContent">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <div class="loading-text">Loading...</div>
+        <div class="spinner"></div>
+    </div>
+
+    <script src="JS/splash_screen.js"></script>
+</body>
+</html>

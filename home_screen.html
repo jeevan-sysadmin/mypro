@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJC e-attendance - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/home_screen.css">
+</head>
+<body>
+    <!-- App Bar -->
+    <div class="app-bar">
+        <button class="menu-btn" id="menuBtn">
+            <span class="material-icons">menu</span>
+        </button>
+        <div class="title" id="pageTitle">Current Attendance</div>
+    </div>
+
+    <!-- Drawer -->
+    <div class="drawer" id="drawer">
+        <div class="user-header">
+            <div class="user-avatar">
+                <img id="userAvatar" src="assets/default_avatar.png" alt="User Avatar">
+            </div>
+            <div class="user-name" id="userName">Loading...</div>
+            <div class="user-role" id="userRole">Role</div>
+        </div>
+        <div class="drawer-item" id="homeBtn">
+            <span class="material-icons icon">home</span>
+            <span>Home</span>
+        </div>
+        <div class="drawer-item" id="substituteBtn">
+            <span class="material-icons icon">swap_horiz</span>
+            <span>Substitute</span>
+        </div>
+        <div class="drawer-item" id="logoutBtn">
+            <span class="material-icons icon">logout</span>
+            <span>Logout</span>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="content" id="mainContent">
+        <img src="assets/logo1.png" alt="Logo" class="logo">
+        
+        <div class="date-display">
+            <div class="staff-name" id="staffName">Staff Name</div>
+            <div class="current-date" id="currentDate">Loading date...</div>
+            <div class="day-order" id="dayOrder"></div>
+        </div>
+
+        <div id="timetableContainer">
+            <!-- Content will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Substitute Content -->
+    <div class="substitute-container" id="substituteContent">
+        <div class="substitute-header">
+            <button class="back-btn" id="backBtn">
+                <span class="material-icons">arrow_back</span>
+            </button>
+            <div class="substitute-title">Substitute Subjects</div>
+        </div>
+        
+        <div class="substitute-date" id="substituteDate"></div>
+        <hr>
+        
+        <div id="substituteLoading" class="substitute-loading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        
+        <div id="subjectsList">
+            <!-- Subjects will be inserted here -->
+        </div>
+        
+        <div id="substituteError" class="alert alert-danger d-none"></div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner"></div>
+
+    <!-- Popup Dialog -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-dialog">
+            <div class="popup-title" id="popupTitle">Title</div>
+            <div class="popup-message" id="popupMessage">Message</div>
+            <div class="popup-actions">
+                <button class="popup-btn" id="popupOkBtn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="js/home_screen.js"></script>
+</body>
+</html>
